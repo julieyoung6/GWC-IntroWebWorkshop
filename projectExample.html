@@ -1,25 +1,38 @@
+<!-- 
+Welcome to the code!
+As you may notice there are so many tags! <></> Each tag comes in a pair: an opening tag < >  and a matching closing tag </ >. These tags compose the structure of an HTML file. 
+
+Find where the <body> tag is to begin.
+ -->
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
+	<!-- Add later -->
+
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
-	<style>
+
+	<!-- beginnging of style // CSS code -->
+	<style> 
+
 
 		body {
 			font-family: 'Sigmar', cursive;
 			text-align: center;
 			padding: 35px;
 			background-color: #d3e4f0;
+			font-size: 25px;
 		}
 		#myButton {
-			font-size: 25px;
-			/*font-family: 'Sigmar', cursive;*/
-
 			width: 200px;
 			height: 200px;
 			background-color: #fac800;
+
+
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 5%;
@@ -28,26 +41,37 @@
 			background-image:url(bear.png);
 			background-size:contain;
 			background-position:center;
+
 			transition: ease-in-out .2s;
 		}
 
 		#myButton:hover {
 			background-image:url(bear.gif);
+
 			transition: ease-in-out .2s;
 		}
 
 
-	</style>
+	</style> 
+	<!-- end of style // CSS code -->
 </head>
+
+
 <body>
+	<!-- In between the <body> tags, lives the 'body' of your website. You will come here to create your divs, insert text, and so much more!  -->
+
+	<!-- p1 stands for paragraph text, this is useful because it comes with default style settings like font-size and font -->
 	<p1 id="subtitle">*everytime you click the bear it will play a random song from the GWC playlist!*</p1> 
 
 	<div id="myButton"></div>
 	<div id="description"></div>
 
+
+	
 	<audio id="vivaLaVida" src="vivaLaVida.mp3"></audio>
 	<audio id="pictureToBurn" src="pictureToBurn.mp3"></audio>
 	<audio id="darkRed" src="darkRed.mp3"></audio>
+
 
 	<script type="text/javascript">
 
